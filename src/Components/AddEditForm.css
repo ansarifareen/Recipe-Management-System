@@ -1,0 +1,91 @@
+.Add-Container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(234, 232, 230, 1);
+    border-radius: 13px;
+    width: 50%;
+  }
+
+  .Add-Heading {
+    padding: 15px;
+    background-color: rgb(213, 211, 211);
+    border-radius: 13px 13px 0px 0px;
+    font-size: larger;
+    text-align: center;
+    
+  }
+  .homeLink{
+    padding: 10px;
+    margin: 10px 50px;
+    border:none ;
+    border-radius: 10px;
+    background-color: rgb(221, 252, 242);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .Styleform {
+    padding: 8px;
+    display: flex;
+  }
+
+  .form-row {
+    display: flex;
+    align-items: center;
+
+  }
+
+  /* .div-box {
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid rgba(234, 232, 230, 1);
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+  }
+  .div-box select{
+    border: none;
+  } */
+   .tags{
+    width: 200px;
+    margin-top: 20px;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(234, 232, 230, 1);
+    border-radius: 7px;
+   }
+   .tags label{
+    margin: 5px;
+   }
+
+  input {
+    padding: 12px;
+    margin: 20px 0px;
+    margin-right: 50px;
+    border: 1px solid rgba(234, 232, 230, 1);
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+  }
+
+  label {
+    font-size: large;
+    margin-right: 80px;
+    width: 50px;
+  }
+
+  .sub {
+    padding: 15px;
+    margin-left: 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(213, 211, 211);
+    cursor: pointer;
+  }
+
+  .sub:hover {
+    background-color: rgb(185, 186, 186);
+    color: white;
+  }
+
+
