@@ -46,6 +46,7 @@ function RecipeDetailPage() {
   if (!recipe) {
     return <div>Recipe not found</div>;
   }
+  // const tagsArray = Array.isArray(recipe.tags) ?  recipe.tags : recipe.tags.split(",");
   return (
     <div className="Detail-Main-Container">
       <div className='detail-Heading'>Recipe Details</div>
@@ -54,7 +55,7 @@ function RecipeDetailPage() {
         <p><strong>Description:</strong> {recipe.description}</p>
         <p><strong>Ingredients:</strong> {recipe.ingredients}</p>
         <p><strong>Steps:</strong> {recipe.steps}</p>
-        <p><strong>Tags:</strong> {recipe.tags}</p>
+        <p><strong>Tags:</strong> {recipe.tags.join(",")}</p>
         <button onClick={handleEditClick}>Edit Recipe</button>
         <label className='switch'>
           <input type='checkbox' 

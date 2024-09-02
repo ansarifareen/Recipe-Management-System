@@ -16,9 +16,9 @@ function AddEditForm() {
   const handleCheckBoxChange=(e)=>{
     const value = e.target.value;
     if(e.target.checked){
-      setTags([...tags,value]);
+      setTags((prevTags)=>[...prevTags,value]);
     }else{
-      setTags(tags.filter((tag)=> tag!== value));
+      setTags((prevTags)=>prevTags.filter((tag)=> tag!== value));
     }
   }
 
@@ -31,8 +31,7 @@ function AddEditForm() {
         setDescription(recipe.description);
         setIngredients(recipe.ingredients);
         setSteps(recipe.steps);
-        setTags(recipe.tags);
-
+        setTags(Array.isArray(recipe.tags) ? recipe.tags : []);
       }
     }
   }, [id]);
