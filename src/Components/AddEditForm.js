@@ -130,7 +130,7 @@ function AddEditForm() {
                 />
                 Vegetarian
               </label>
-              <br />
+              {/* <br /> */}
               <label>
                 <input
                   type="checkbox"
@@ -140,7 +140,7 @@ function AddEditForm() {
                 />
                 glutan-free
               </label>
-              <br />
+              {/* <br /> */}
               <label>
                 <input
                   type="checkbox"

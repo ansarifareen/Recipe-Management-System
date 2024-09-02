@@ -1,20 +1,25 @@
 .Add-Container {
     display: flex;
     flex-direction: column;
-    margin: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 500px; 
     box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
     border: 1px solid rgba(234, 232, 230, 1);
+    padding: 20px;
     border-radius: 13px;
-    width: 50%;
   }
 
   .Add-Heading {
+    width: 100%;
     padding: 15px;
     background-color: rgb(213, 211, 211);
-    border-radius: 13px 13px 0px 0px;
+    /* border-radius: 13px 13px 0px 0px; */
     font-size: larger;
-    text-align: center;
-    
+    text-align: center;  
+    /* box-sizing: border-box; */
   }
   .homeLink{
     padding: 10px;
@@ -34,19 +39,7 @@
   .form-row {
     display: flex;
     align-items: center;
-
   }
-
-  /* .div-box {
-    padding: 12px;
-    margin: 5px 0;
-    border: 1px solid rgba(234, 232, 230, 1);
-    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
-    border-radius: 7px;
-  }
-  .div-box select{
-    border: none;
-  } */
    .tags{
     width: 200px;
     margin-top: 20px;
@@ -69,7 +62,7 @@
 
   label {
     font-size: large;
-    margin-right: 80px;
+    margin-right: 100px;
     width: 50px;
   }
 
