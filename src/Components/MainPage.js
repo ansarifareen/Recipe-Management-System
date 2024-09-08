@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 function MainPage() {
   return (
-      <div className='main-container'>
+      <div className='c'>
              <div className='Header'>
                 <div>Recipe Management System</div>
                 <Link to='/add-recipe' className='head-btn'>Add Recipe</Link>

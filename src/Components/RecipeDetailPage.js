@@ -48,7 +48,7 @@ function RecipeDetailPage() {
   }
   // const tagsArray = Array.isArray(recipe.tags) ?  recipe.tags : recipe.tags.split(",");
   return (
-    <div className="Detail-Main-Container">
+    <div className="detail-Main-Container">
       <div className='detail-Heading'>Recipe Details</div>
       <div className='detail-container'>
         <h2>Title:{recipe.title}</h2>

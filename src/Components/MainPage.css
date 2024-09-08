@@ -3,20 +3,22 @@
     background-color: rgb(213, 211, 211);
     font-size: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 .head-btn {
     padding: 10px;
-    margin: 10px 50px;
+    margin: 10px 30px;
     border:none ;
     border-radius: 10px;
     background-color: rgb(221, 252, 242);
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    font-size: 20px;
 }
 .head-btn button:hover{
     background-color:grey ;
@@ -24,5 +26,37 @@
 }
 .container{
     display: flex;
+    /* flex-direction: column; */
+    padding: 10px;
 }
 
+@media (max-width:786px){
+    .Header{
+        font-size: 22px;
+        padding: 8px 5px;
+    }
+    .head-btn {
+        margin: 10px; 
+        font-size: 16px; 
+    }
+    .container{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 455px) {
+    .Header {
+        font-size: 16px;
+        padding: 6px 5px;
+    }
+
+    .head-btn {
+        margin: 8px ; 
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 5px;
+        flex-direction: column; 
+    }
+}

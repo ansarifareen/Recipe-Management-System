@@ -118,7 +118,7 @@ function AddEditForm() {
               <option value="vegan">Vegan</option>
             </select>
           </div> */}
-          <div className="form-row">
+          <div className="form-row tags-container">
             <label htmlFor="tags">Tags</label>
             <div id="mytags" className="tags">
               <label>

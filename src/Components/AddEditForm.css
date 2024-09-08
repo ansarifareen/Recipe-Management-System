@@ -2,24 +2,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: auto;
+    align-items: center; 
+    margin: 20px auto;
     width: 100%;
-    max-width: 500px; 
+    max-width: 500px;
     box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
     border: 1px solid rgba(234, 232, 230, 1);
-    padding: 20px;
     border-radius: 13px;
+  }
+
+  @media (max-width: 455px){
+    .Add-Container{
+      width: 90%;
+    }
   }
 
   .Add-Heading {
     width: 100%;
     padding: 15px;
     background-color: rgb(213, 211, 211);
-    /* border-radius: 13px 13px 0px 0px; */
+    border-radius: 13px 13px 0px 0px;
     font-size: larger;
-    text-align: center;  
-    /* box-sizing: border-box; */
+    text-align: center;
+    box-sizing: border-box;
+    
   }
   .homeLink{
     padding: 10px;
@@ -34,51 +40,87 @@
   .Styleform {
     padding: 8px;
     display: flex;
+    flex-direction: column;
+    width: 80%;
   }
 
   .form-row {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px; 
   }
-   .tags{
-    width: 200px;
-    margin-top: 20px;
-    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(234, 232, 230, 1);
-    border-radius: 7px;
-   }
-   .tags label{
-    margin: 5px;
-   }
-
-  input {
+  input[type ="text"] ,
+  textarea{
     padding: 12px;
-    margin: 20px 0px;
-    margin-right: 50px;
+    width: 100%;
+    margin-top: 8px;
     border: 1px solid rgba(234, 232, 230, 1);
     box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
     border-radius: 7px;
   }
 
-  label {
+  label{
     font-size: large;
-    margin-right: 100px;
-    width: 50px;
+    margin-bottom: 5px;
+    
   }
+  .tags-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+   .tags {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    border: 1px solid rgba(234, 232, 230, 1);
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+}
+
+.tags label {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
 
   .sub {
+    margin: 5px;
     padding: 15px;
-    margin-left: 15px;
     border: none;
     font-weight: bold;
     font-size: 15px;
     background-color: rgb(213, 211, 211);
     cursor: pointer;
+  
   }
 
   .sub:hover {
     background-color: rgb(185, 186, 186);
     color: white;
+  }
+
+  @media (max-width: 455px) {
+    .Add-Heading{
+      font-size: 15px;
+    }
+    .homeLink{
+      padding: 5px;
+      margin: 5px 10px;
+
+    }
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .tags-container {
+      flex-direction: column;
+    }
+    .sub{
+      font-size: 12px;
+      padding: 10px;
+    }
   }
 
 
